@@ -22,7 +22,7 @@
           <button class="btn btn-success bg-green-500">Blog</button>
         </div>
         <div class="navbar-center">
-          <img src="assets/logo.png" alt=""><a class="btn btn-ghost text-xl"
+          <img src="assets/logo.png" alt="" /><a class="btn btn-ghost text-xl"
             >Help<span class="text-second">Flow</span>
           </a>
         </div>
@@ -30,7 +30,7 @@
           <div class="stats shadow">
             <div class="stat-value flex items-center justify-center">
               <img src="assets/coin.png" alt="" class="mr-2" />
-              10000
+              <span id="mainBalance">10000</span>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
               <div class="stats shadow">
                 <div class="stat-value flex items-center justify-start">
                   <img src="assets/coin.png" alt="" class="mr-2" />
-                  10000
+                  <span id="noakhaliBalance">8000</span>
                 </div>
               </div>
               <h2 class="card-title">
@@ -86,12 +86,18 @@
                 Noakhali.
               </h6>
               <input
+                id="inputNoakhali"
                 type="text"
                 class="input input-bordered w-full mb-4"
                 placeholder="Donate Amount "
               />
               <div class="card-actions justify-end">
-                <button class="btn btn-primary  bg-green-500 w-full">Donate Now</button>
+                <button
+                  id="btnNoakhali"
+                  class="btn btn-primary bg-green-500 w-full"
+                >
+                  Donate Now
+                </button>
               </div>
             </div>
           </div>
@@ -111,7 +117,7 @@
               <div class="stats shadow">
                 <div class="stat-value flex items-center justify-start">
                   <img src="assets/coin.png" alt="" class="mr-2" />
-                  8500
+                  <span id="feniBalance">8500</span>
                 </div>
               </div>
               <h2 class="card-title">Donate for Flood at Feni, Bangladesh</h2>
@@ -128,12 +134,18 @@
                 families.
               </h6>
               <input
+                id="inputFeni"
                 type="text"
                 class="input input-bordered w-full mb-4"
                 placeholder="Donate Amount "
               />
               <div class="card-actions justify-end">
-                <button class="btn btn-primary bg-green-500 w-full">Donate Now</button>
+                <button
+                  id="btnFeni"
+                  class="btn btn-primary bg-green-500 w-full"
+                >
+                  Donate Now
+                </button>
               </div>
             </div>
           </div>
@@ -153,7 +165,7 @@
               <div class="stats shadow">
                 <div class="stat-value flex items-center justify-start">
                   <img src="assets/coin.png" alt="" class="mr-2" />
-                  7500
+                  <span id="quotaBalance">7500</span>
                 </div>
               </div>
               <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
@@ -171,12 +183,18 @@
                 need.
               </h6>
               <input
+                id="inputQuota"
                 type="text"
                 class="input input-bordered w-full mb-4"
                 placeholder="Donate Amount "
               />
               <div class="card-actions justify-end">
-                <button class="btn btn-primary bg-green-500 w-full">Donate Now</button>
+                <button
+                  id="btnQuota"
+                  class="btn btn-primary bg-green-500 w-full"
+                >
+                  Donate Now
+                </button>
               </div>
             </div>
           </div>
@@ -196,7 +214,7 @@
               <div class="stats shadow">
                 <div class="stat-value flex items-center justify-start">
                   <img src="assets/coin.png" alt="" class="mr-2" />
-                  12000
+                  <span id="educationBalance">12000</span>
                 </div>
               </div>
               <h2 class="card-title">
@@ -212,12 +230,18 @@
               <li>Improved learning environments</li>
               <h6>Together, we can empower children through education.</h6>
               <input
+                id="inputEducation"
                 type="text"
                 class="input input-bordered w-full mb-4"
                 placeholder="Donate Amount "
               />
               <div class="card-actions justify-end">
-                <button class="btn btn-primary bg-green-500 w-full">Donate Now</button>
+                <button
+                  id="btnEducation"
+                  class="btn btn-primary bg-green-500 w-full"
+                >
+                  Donate Now
+                </button>
               </div>
             </div>
           </div>
@@ -234,5 +258,11 @@
       </div>
     </footer>
     <!-- footer End -->
+
+    <!-- JS -->
+    <script src="Js/feature.js"></script>
+    <script src="Js/utilities.js"></script>
+    <script src="Js/donation.js"></script>
+    <!-- JS -->
   </body>
 </html>
