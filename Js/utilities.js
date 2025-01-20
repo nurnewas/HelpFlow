@@ -6,7 +6,7 @@ function getInputById(id) {
   // Check if the input is a valid positive number
   if (isNaN(inputValue) || inputValue <= 0) {
     alert("Please enter a valid positive number!");
-    inputElement.value = ""; 
+    inputElement.value = "";
     return 0;
   }
 
@@ -19,7 +19,7 @@ function getTextById(id) {
   return textValue;
 }
 
-// Show section and Hide with Id 
+// Show section and Hide with Id
 function showSectionById(id) {
   // hidden All the section
   console.log("Hiding all sections and showing:", id);
@@ -31,15 +31,15 @@ function showSectionById(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
-
-// donation 
+// donation
 function storeDonation(amount, location, cardName) {
-  const donationHistory = JSON.parse(localStorage.getItem("donationHistory")) || [];
+  const donationHistory =
+    JSON.parse(localStorage.getItem("donationHistory")) || [];
   const newDonation = {
     amount: amount,
-    location: location,
+    location: `${location}, Bangladesh`,
     cardName: cardName,
-    time: new Date().toString(), // Save the current date and time
+    time: new Date().toLocaleString("en-BD", { timeZone: "Asia/Dhaka" }), // Save the current date and time in Bangladesh format
   };
   donationHistory.push(newDonation);
   localStorage.setItem("donationHistory", JSON.stringify(donationHistory));

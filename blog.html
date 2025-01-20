@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpFlow</title>
+    <!-- daisyui & tailwindcss-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui & tailwindcss-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Start  -->
+    <header class="sticky top-0 z-50 bg-base-100">
+      <!-- Navbar -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <button class="btn btn-success bg-green-500">Blog</button>
+        </div>
+        <div class="navbar-center">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img
+              src="assets/logo.png"
+              alt="HelpFlow Logo"
+              class="cursor-pointer"
+            />
+            <span class="btn btn-ghost text-xl"
+              >Help<span class="text-second">Flow</span></span
+            >
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="stats shadow">
+            <div class="stat-value flex items-center justify-center">
+              <img src="assets/coin.png" alt="" class="mr-2" />
+              <span id="mainBalance">10000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+    </header>
+
+    <!-- Main Start  -->
+    <main class="p-4 bg-base-200">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The <strong>DOM</strong> (Document Object Model) is a programming
+            interface for web documents. It represents the page as a tree of
+            objects where each object corresponds to an HTML element or content.
+            JavaScript uses the DOM to access and manipulate elements on the
+            page. This allows you to dynamically change content, structure, and
+            style without reloading the page. The DOM is essential for creating
+            interactive web pages and applications.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What do you select element for the DOM?
+        </div>
+        <div class="collapse-content">
+          <ul>
+            <li><code>getElementById("id")</code> to select by element ID.</li>
+            <li>
+              <code>getElementsByClassName("class")</code> to select by class
+              name.
+            </li>
+            <li>
+              <code>getElementsByTagName("tag")</code> to select by tag name.
+            </li>
+            <li>
+              <code>querySelector("selector")</code> to select the first
+              matching element (CSS selector).
+            </li>
+            <li>
+              <code>querySelectorAll("selector") </code>to select all matching
+              elements (CSS selector).
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is event delegation in the context of the DOM ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique in JavaScript where you attach a
+            single event listener to a parent element instead of individual
+            child elements. This works by utilizing the event bubbling
+            mechanism, where events propagate from the target element to its
+            ancestors. By listening for events on a parent, you can handle
+            events for multiple child elements, even those added dynamically
+            after the page has loaded. This method improves performance by
+            reducing the number of event listeners, making the code more
+            efficient, especially with large or dynamic content. It also
+            simplifies code, as you only need one listener for multiple child
+            elements. Event delegation is particularly useful when dealing with
+            dynamically generated elements or elements that share similar
+            behavior.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Why the DOM Is Useful ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The DOM (Document Object Model) is useful because it allows
+            developers to interact with and manipulate the structure, content,
+            and style of a webpage programmatically. Through the DOM, developers
+            can access and modify HTML elements in real-time, which enables
+            dynamic content updates, interactivity, and responsive behaviors on
+            websites. It enables JavaScript to modify content without reloading
+            the page, leading to smoother user experiences. Additionally, the
+            DOM makes it possible to add, remove, or modify elements, handle
+            events, and create complex applications that respond to user
+            actions, all in a structured and organized way.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- Main End  -->
+
+    <!-- footer Start  -->
+    <footer class="mt-4 p-4 bg-base-300 text-base-content">
+      <div class="text-center">
+        <p>HelpFlow &copy; 2025. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- footer End -->
+
+    <!-- JS -->
+    <script src="Js/history.js"></script>
+    <script src="Js/utilities.js"></script>
+    <script src="Js/donation.js"></script>
+    <script src="Js/alart.js"></script>
+    <!-- JS -->
+  </body>
+</html>

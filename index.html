@@ -12,6 +12,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyui & tailwindcss-->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header Start  -->
@@ -19,7 +20,12 @@
       <!-- Navbar -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
-          <button class="btn btn-success bg-green-500">Blog</button>
+          <button
+            class="btn btn-success bg-green-500"
+            onclick="window.location.href='blog.html'"
+          >
+            Blog
+          </button>
         </div>
         <div class="navbar-center">
           <img src="assets/logo.png" alt="" /><a class="btn btn-ghost text-xl"
@@ -50,209 +56,210 @@
     <main class="p-4 bg-base-200">
       <div class="donationSection">
         <div class="flex flex-col gap-6">
-
           <div id="donationSection">
-                      <!-- Card 1 -->
-          <form action="">
-            <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure class="lg:w-1/2">
-                <img
-                  src="assets/noakhali.png"
-                  alt="Flood in Noakhali"
-                  class="w-full h-full object-cover"
-                />
-              </figure>
-              <div class="card-body lg:w-1/2">
-                <div class="stats shadow">
-                  <div class="stat-value flex items-center justify-start">
-                    <img src="assets/coin.png" alt="" class="mr-2" />
-                    <span id="noakhaliBalance">8000</span>
+            <!-- Card 1 -->
+            <form action="">
+              <div class="mt-4 mb-4 card lg:card-side bg-base-100 shadow-xl">
+                <figure class="lg:w-1/2">
+                  <img
+                    src="assets/noakhali.png"
+                    alt="Flood in Noakhali"
+                    class="w-full h-full object-cover"
+                  />
+                </figure>
+                <div class="card-body lg:w-1/2">
+                  <div class="stats shadow">
+                    <div class="stat-value flex items-center justify-start">
+                      <img src="assets/coin.png" alt="" class="mr-2" />
+                      <span id="noakhaliBalance">8000</span>
+                    </div>
+                  </div>
+                  <h2 class="card-title">
+                    Donate for Flood at Noakhali, Bangladesh
+                  </h2>
+                  <p>
+                    The people of Noakhali, Bangladesh, are facing devastating
+                    floods, leaving thousands of families displaced, homeless,
+                    and in desperate need of help. The floodwaters have
+                    submerged vast areas, causing destruction to homes, crops,
+                    and vital infrastructure. The situation is dire, and the
+                    affected communities are in urgent need of assistance.
+                  </p>
+                  <li>Support for children and families in need</li>
+                  <li>Shelter and temporary housing</li>
+                  <li>Medical aid and supplies</li>
+                  <li>Support for children and families in need</li>
+                  <h6>
+                    Together, we can help rebuild lives and restore hope in
+                    Noakhali.
+                  </h6>
+                  <input
+                    id="inputNoakhali"
+                    type="text"
+                    class="input input-bordered w-full mb-4"
+                    placeholder="Donate Amount "
+                  />
+                  <div class="card-actions justify-end">
+                    <button
+                      id="btnNoakhali"
+                      class="btn btn-primary bg-green-500 w-full"
+                    >
+                      Donate Now
+                    </button>
                   </div>
                 </div>
-                <h2 class="card-title">
-                  Donate for Flood at Noakhali, Bangladesh
-                </h2>
-                <p>
-                  The people of Noakhali, Bangladesh, are facing devastating
-                  floods, leaving thousands of families displaced, homeless, and
-                  in desperate need of help. The floodwaters have submerged vast
-                  areas, causing destruction to homes, crops, and vital
-                  infrastructure. The situation is dire, and the affected
-                  communities are in urgent need of assistance.
-                </p>
-                <li>Support for children and families in need</li>
-                <li>Shelter and temporary housing</li>
-                <li>Medical aid and supplies</li>
-                <li>Support for children and families in need</li>
-                <h6>
-                  Together, we can help rebuild lives and restore hope in
-                  Noakhali.
-                </h6>
-                <input
-                  id="inputNoakhali"
-                  type="text"
-                  class="input input-bordered w-full mb-4"
-                  placeholder="Donate Amount "
-                />
-                <div class="card-actions justify-end">
-                  <button
-                    id="btnNoakhali"
-                    class="btn btn-primary bg-green-500 w-full"
-                  >
-                    Donate Now
-                  </button>
-                </div>
               </div>
-            </div>
-          </form>
+            </form>
 
-          <!-- Card 2 -->
-          <form action="">
-            <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure class="lg:w-1/2">
-                <img
-                  src="assets/feni.png"
-                  alt="Flood in Feni"
-                  class="w-full h-full object-cover"
-                />
-              </figure>
-              <div class="card-body lg:w-1/2">
-                <div class="stats shadow">
-                  <div class="stat-value flex items-center justify-start">
-                    <img src="assets/coin.png" alt="" class="mr-2" />
-                    <span id="feniBalance">8500</span>
+            <!-- Card 2 -->
+            <form action="">
+              <div class=" mt-4 mb-4 card lg:card-side bg-base-100 shadow-xl">
+                <figure class="lg:w-1/2">
+                  <img
+                    src="assets/feni.png"
+                    alt="Flood in Feni"
+                    class="w-full h-full object-cover"
+                  />
+                </figure>
+                <div class="card-body lg:w-1/2">
+                  <div class="stats shadow">
+                    <div class="stat-value flex items-center justify-start">
+                      <img src="assets/coin.png" alt="" class="mr-2" />
+                      <span id="feniBalance">8500</span>
+                    </div>
+                  </div>
+                  <h2 class="card-title">
+                    Donate for Flood at Feni, Bangladesh
+                  </h2>
+                  <p>
+                    The people of Feni are suffering due to the relentless
+                    floods that have caused significant damage. Many families
+                    are without shelter, food, and access to basic medical care.
+                  </p>
+                  <li>Emergency food distribution</li>
+                  <li>Rebuilding destroyed homes</li>
+                  <li>Providing clean drinking water</li>
+                  <h6>
+                    Your support can bring relief and recovery to the affected
+                    families.
+                  </h6>
+                  <input
+                    id="inputFeni"
+                    type="text"
+                    class="input input-bordered w-full mb-4"
+                    placeholder="Donate Amount "
+                  />
+                  <div class="card-actions justify-end">
+                    <button
+                      id="btnFeni"
+                      class="btn btn-primary bg-green-500 w-full"
+                    >
+                      Donate Now
+                    </button>
                   </div>
                 </div>
-                <h2 class="card-title">Donate for Flood at Feni, Bangladesh</h2>
-                <p>
-                  The people of Feni are suffering due to the relentless floods
-                  that have caused significant damage. Many families are without
-                  shelter, food, and access to basic medical care.
-                </p>
-                <li>Emergency food distribution</li>
-                <li>Rebuilding destroyed homes</li>
-                <li>Providing clean drinking water</li>
-                <h6>
-                  Your support can bring relief and recovery to the affected
-                  families.
-                </h6>
-                <input
-                  id="inputFeni"
-                  type="text"
-                  class="input input-bordered w-full mb-4"
-                  placeholder="Donate Amount "
-                />
-                <div class="card-actions justify-end">
-                  <button
-                    id="btnFeni"
-                    class="btn btn-primary bg-green-500 w-full"
-                  >
-                    Donate Now
-                  </button>
-                </div>
               </div>
-            </div>
-          </form>
+            </form>
 
-          <!-- Card 3 -->
-          <form action="">
-            <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure class="lg:w-1/2">
-                <img
-                  src="assets/quota-protest.png"
-                  alt="Aid for Injured in the Quota Movement"
-                  class="w-full h-full object-cover"
-                />
-              </figure>
-              <div class="card-body lg:w-1/2">
-                <div class="stats shadow">
-                  <div class="stat-value flex items-center justify-start">
-                    <img src="assets/coin.png" alt="" class="mr-2" />
-                    <span id="quotaBalance">7500</span>
+            <!-- Card 3 -->
+            <form action="">
+              <div class="mt-4 mb-4 card lg:card-side bg-base-100 shadow-xl">
+                <figure class="lg:w-1/2">
+                  <img
+                    src="assets/quota-protest.png"
+                    alt="Aid for Injured in the Quota Movement"
+                    class="w-full h-full object-cover"
+                  />
+                </figure>
+                <div class="card-body lg:w-1/2">
+                  <div class="stats shadow">
+                    <div class="stat-value flex items-center justify-start">
+                      <img src="assets/coin.png" alt="" class="mr-2" />
+                      <span id="quotaBalance">7500</span>
+                    </div>
+                  </div>
+                  <h2 class="card-title">
+                    Aid for Injured in the Quota Movement
+                  </h2>
+                  <p>
+                    Many individuals have been injured in the Quota Movement
+                    protests and are in urgent need of medical assistance. Help
+                    us provide aid to those recovering from injuries and ensure
+                    their treatment and rehabilitation.
+                  </p>
+                  <li>Access to medical supplies</li>
+                  <li>Financial support for treatment</li>
+                  <li>Rehabilitation programs</li>
+                  <h6>
+                    Your contribution can bring comfort and recovery to those in
+                    need.
+                  </h6>
+                  <input
+                    id="inputQuota"
+                    type="text"
+                    class="input input-bordered w-full mb-4"
+                    placeholder="Donate Amount "
+                  />
+                  <div class="card-actions justify-end">
+                    <button
+                      id="btnQuota"
+                      class="donateBtn btn btn-primary bg-green-500 w-full"
+                    >
+                      Donate Now
+                    </button>
                   </div>
                 </div>
-                <h2 class="card-title">
-                  Aid for Injured in the Quota Movement
-                </h2>
-                <p>
-                  Many individuals have been injured in the Quota Movement
-                  protests and are in urgent need of medical assistance. Help us
-                  provide aid to those recovering from injuries and ensure their
-                  treatment and rehabilitation.
-                </p>
-                <li>Access to medical supplies</li>
-                <li>Financial support for treatment</li>
-                <li>Rehabilitation programs</li>
-                <h6>
-                  Your contribution can bring comfort and recovery to those in
-                  need.
-                </h6>
-                <input
-                  id="inputQuota"
-                  type="text"
-                  class="input input-bordered w-full mb-4"
-                  placeholder="Donate Amount "
-                />
-                <div class="card-actions justify-end">
-                  <button
-                    id="btnQuota"
-                    class="donateBtn btn btn-primary bg-green-500 w-full"
-                  >
-                    Donate Now
-                  </button>
-                </div>
               </div>
-            </div>
-          </form>
+            </form>
 
-          <!-- Card 4 -->
-          <form action="">
-            <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure class="lg:w-1/2">
-                <img
-                  src="assets/Support Education for Underprivileged Children.jpg"
-                  alt="Education for Underprivileged"
-                  class="w-full h-full object-cover"
-                />
-              </figure>
-              <div class="card-body lg:w-1/2">
-                <div class="stats shadow">
-                  <div class="stat-value flex items-center justify-start">
-                    <img src="assets/coin.png" alt="" class="mr-2" />
-                    <span id="educationBalance">12000</span>
+            <!-- Card 4 -->
+            <form action="">
+              <div class="mt-4 mb-4 card lg:card-side bg-base-100 shadow-xl">
+                <figure class="lg:w-1/2">
+                  <img
+                    src="assets/Support Education for Underprivileged Children.jpg"
+                    alt="Education for Underprivileged"
+                    class="w-full h-full object-cover"
+                  />
+                </figure>
+                <div class="card-body lg:w-1/2">
+                  <div class="stats shadow">
+                    <div class="stat-value flex items-center justify-start">
+                      <img src="assets/coin.png" alt="" class="mr-2" />
+                      <span id="educationBalance">12000</span>
+                    </div>
+                  </div>
+                  <h2 class="card-title">
+                    Support Education for Underprivileged Children
+                  </h2>
+                  <p>
+                    Many children in Bangladesh are deprived of education due to
+                    poverty. Your support can help provide the resources they
+                    need to build a brighter future.
+                  </p>
+                  <li>School supplies and uniforms</li>
+                  <li>Scholarship programs</li>
+                  <li>Improved learning environments</li>
+                  <h6>Together, we can empower children through education.</h6>
+                  <input
+                    id="inputEducation"
+                    type="text"
+                    class="input input-bordered w-full mb-4"
+                    placeholder="Donate Amount "
+                  />
+                  <div class="card-actions justify-end">
+                    <button
+                      id="btnEducation"
+                      class="btn btn-primary bg-green-500 w-full"
+                    >
+                      Donate Now
+                    </button>
                   </div>
                 </div>
-                <h2 class="card-title">
-                  Support Education for Underprivileged Children
-                </h2>
-                <p>
-                  Many children in Bangladesh are deprived of education due to
-                  poverty. Your support can help provide the resources they need
-                  to build a brighter future.
-                </p>
-                <li>School supplies and uniforms</li>
-                <li>Scholarship programs</li>
-                <li>Improved learning environments</li>
-                <h6>Together, we can empower children through education.</h6>
-                <input
-                  id="inputEducation"
-                  type="text"
-                  class="input input-bordered w-full mb-4"
-                  placeholder="Donate Amount "
-                />
-                <div class="card-actions justify-end">
-                  <button
-                    id="btnEducation"
-                    class="btn btn-primary bg-green-500 w-full"
-                  >
-                    Donate Now
-                  </button>
-                </div>
               </div>
-            </div>
-          </form>
-        </div>
+            </form>
           </div>
+        </div>
         <!-- alert  -->
         <div
           id="alertBox"
@@ -283,14 +290,14 @@
           <!-- History data  -->
         </div>
       </div>
-      
+
       <!-- History Section  -->
     </main>
 
     <!-- Main End  -->
 
     <!-- footer Start  -->
-    <footer class="p-4 bg-base-300 text-base-content">
+    <footer class="mt-4 p-4 bg-base-300 text-base-content">
       <div class="text-center">
         <p>HelpFlow &copy; 2025. All rights reserved.</p>
       </div>

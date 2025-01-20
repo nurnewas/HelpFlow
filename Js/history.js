@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (historyData.length > 0) {
       let historyHTML = `<ul>`;
       historyData.forEach((entry) => {
-        historyHTML += `<li>Amount: $${entry.amount} | Time: ${entry.time} | Location: ${entry.location}</li>`;
+        historyHTML += `<li>Amount: taka: ${entry.amount} <br>Donation Time: ${entry.time} <br> Donation For: ${entry.location}</li>`;
       });
       historyHTML += `</ul>`;
       historyContent.innerHTML = historyHTML;
