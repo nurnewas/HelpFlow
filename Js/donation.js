@@ -18,6 +18,10 @@ document.getElementById("btnNoakhali").addEventListener("click", function (e) {
   // Main  Balance update
   const mainAccountBalance = mainBalance - inputNoakhali;
   document.getElementById("mainBalance").innerText = mainAccountBalance;
+
+  // Store the donation
+  storeDonation(inputNoakhali, "Noakhali, Bangladesh", "Card 1");
+
 });
 //Card 1
 
@@ -40,6 +44,10 @@ document.getElementById("btnFeni").addEventListener("click", function (e) {
   // Main  Balance update
   const mainAccountBalance = mainBalance - inputFeni;
   document.getElementById("mainBalance").innerText = mainAccountBalance;
+
+   // Store the donation
+   storeDonation(inputFeni, "Feni, Bangladesh", "Card 2");
+ 
 });
 // card 2
 
@@ -62,6 +70,11 @@ document.getElementById("btnQuota").addEventListener("click", function (e) {
   // Main  Balance update
   const mainAccountBalance = mainBalance - inputQuota;
   document.getElementById("mainBalance").innerText = mainAccountBalance;
+
+  // Store the donation
+  storeDonation(inputQuota, "Quota, Bangladesh", "Card 3");
+
+  
 });
 // Card 3
 
@@ -84,5 +97,9 @@ document.getElementById("btnEducation").addEventListener("click", function (e) {
   // Main  Balance update
   const mainAccountBalance = mainBalance - inputEducation;
   document.getElementById("mainBalance").innerText = mainAccountBalance;
+
+  // Store the donation
+  storeDonation(inputEducation, "Education, Bangladesh", "Card 4");
+ 
 });
 // Card 4
